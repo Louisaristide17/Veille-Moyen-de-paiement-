@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💳 Les Moyens de Paiement en Ligne • Explication Complète</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --primary: #00d4ff;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .title-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 25px 50px -12px rgb(0 212 255 / 0.25);
+        }
+
+        .section-title {
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: #00d4ff;
+            bottom: -8px;
+            left: 0;
+            border-radius: 9999px;
+        }
+
+        .timeline-dot {
+            width: 18px;
+            height: 18px;
+            background: #00d4ff;
+            box-shadow: 0 0 0 6px rgba(0, 212, 255, 0.2);
+        }
+
+        .code-block {
+            background: #0f172a;
+            border-left: 5px solid #00d4ff;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+    <!-- NAVBAR -->
+    <nav class="bg-black border-b border-zinc-800 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-cyan-400 rounded-2xl flex items-center justify-center text-3xl">💳</div>
+                <h1 class="title-font text-3xl font-semibold tracking-tighter">Paiement<span class="text-cyan-400">Online</span></h1>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#intro" class="hover:text-cyan-400 transition-colors">Introduction</a>
+                <a href="#types" class="hover:text-cyan-400 transition-colors">Les Types</a>
+                <a href="#fonctionnement" class="hover:text-cyan-400 transition-colors">Comment ça marche</a>
+                <a href="#securite" class="hover:text-cyan-400 transition-colors">Sécurité</a>
+                <a href="#avantages" class="hover:text-cyan-400 transition-colors">Avantages &amp; Risques</a>
+            </div>
+          
+                
+            
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="intro" class="hero-bg pt-28 pb-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-5 py-2 bg-white/10 backdrop-blur-xl rounded-3xl text-sm mb-6">
+                        
+                        
+                    </div>
+                    <h2 class="title-font text-7xl leading-none font-bold tracking-tighter mb-6">
+                        C'EST QUOI<br>UN <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">MOYEN DE PAIEMENT EN LIGNE</span> ?
+                    </h2>
+                    <p class="text-xl text-zinc-400 max-w-lg">
+                        Pas juste "je clique et je paye". C'est un système ultra-complexe mêlant banques, technologies, protocoles de sécurité et réseaux mondiaux. 
+                        Tu vas tout comprendre : du clic jusqu'au virement sur le compte du marchand.
+                    </p>
+                    <div class="mt-10 flex items-center gap-4">
+                        <a href="#fonctionnement" 
+                           class="px-8 py-5 bg-white text-black font-semibold rounded-3xl flex items-center gap-3 hover:scale-105 transition-all">
+                            <i class="fas fa-play"></i>
+                            VOIR LE FONCTIONNEMENT EN DÉTAIL
+                        </a>
+                      
+                    </div>
+                </div>
+                
+                <!-- Visuel interactif -->
+                <div class="relative">
+                    <div class="absolute -inset-10 bg-cyan-400/10 blur-3xl rounded-[100px]"></div>
+                    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8 relative">
+                        <div class="flex justify-center mb-8">
+                            <div class="w-48 h-48 rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center shadow-2xl shadow-cyan-500/50">
+                                <div class="text-center">
+                                    <i class="fas fa-credit-card text-7xl text-white"></i>
+                                    <div class="mt-4 text-white text-sm font-medium tracking-widest">VISA • MASTERCARD • PAYPAL</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Flux simplifié -->
+                        <div class="grid grid-cols-3 gap-4 text-center text-xs">
+                            <div class="bg-zinc-800 rounded-2xl p-4">
+                                <div class="text-emerald-400 mb-1">👤</div>
+                                <div class="font-medium">Client</div>
+                            </div>
+                            <div class="flex items-center justify-center text-cyan-400">
+                                <i class="fas fa-arrow-right text-4xl"></i>
+                            </div>
+                            <div class="bg-zinc-800 rounded-2xl p-4">
+                                <div class="text-amber-400 mb-1">🏪</div>
+                                <div class="font-medium">Marchand</div>
+                            </div>
+                        </div>
+                        <div class="text-center text-[10px] text-zinc-500 mt-6">+ Banque + Passerelle + Réseau</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-6 py-20">
+        
+        <!-- SECTION 1 : DÉFINITION -->
+        <section class="mb-24">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="px-4 py-1 bg-cyan-400 text-black text-xs font-bold rounded-3xl">01</span>
+                <h3 class="section-title text-4xl font-semibold title-font">Définition précise</h3>
+            </div>
+            <div class="prose prose-invert max-w-none text-lg">
+                <p class="text-zinc-300">
+                    Un <strong>moyen de paiement en ligne</strong> (ou paiement électronique) est <strong>tout système qui permet d'effectuer une transaction financière via internet</strong>, sans échange physique d'argent.
+                </p>
+                <p class="text-zinc-300">
+                    Contrairement au paiement en magasin (espèces, carte tapée sur un terminal), ici tout se passe numériquement : 
+                    le client donne l'ordre de transfert, la banque vérifie, l'argent bouge électroniquement.
+                </p>
+                
+                <div class="my-12 bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div>
+                            <div class="text-cyan-400 text-5xl font-bold">1994</div>
+                            <div class="text-sm text-zinc-500">Premier paiement en ligne (Pizza Hut + Netscape)</div>
+                        </div>
+                        <div>
+                            <div class="text-cyan-400 text-5xl font-bold">1998</div>
+                            <div class="text-sm text-zinc-500">Lancement de PayPal</div>
+                        </div>
+                        <div>
+                            <div class="text-cyan-400 text-5xl font-bold">2026</div>
+                            <div class="text-sm text-zinc-500">+ de 2 500 milliards $ de transactions mondiales</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2 : LES TYPES -->
+        <section id="types" class="mb-24">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="px-4 py-1 bg-cyan-400 text-black text-xs font-bold rounded-3xl">02</span>
+                <h3 class="section-title text-4xl font-semibold title-font">Les 7 grandes familles de paiement en ligne</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Carte bancaire -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 card-hover">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-14 h-14 bg-gradient-to-br from-red-400 to-orange-400 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">💳</div>
+                        <div>
+                            <h4 class="text-2xl font-semibold">Cartes bancaires (Visa, Mastercard, etc.)</h4>
+                            <p class="text-zinc-400 mt-2">Le classique. Tu rentres numéro de carte + date + CVV. La banque vérifie en temps réel.</p>
+                            <ul class="mt-6 space-y-3 text-sm">
+                                <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-400"></i> 3D Secure 2.0 (authentification forte)</li>
+                                <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-400"></i> Tokenisation (le numéro réel n’est jamais stocké)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portefeuilles électroniques -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 card-hover">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">📱</div>
+                        <div>
+                            <h4 class="text-2xl font-semibold">Portefeuilles électroniques (PayPal, Stripe, Apple Pay, Google Pay)</h4>
+                            <p class="text-zinc-400 mt-2">Tu lies ta carte une seule fois. Ensuite tu payes en 1 clic avec ton empreinte ou code.</p>
+                            <div class="mt-6 bg-black rounded-2xl p-5 text-xs">
+                                <div class="flex justify-between text-zinc-400">
+                                    <span>Client</span>
+                                    <span>→</span>
+                                    <span>Portefeuille</span>
+                                    <span>→</span>
+                                    <span>Banque</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paiement mobile / Mobile Money -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 card-hover">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-14 h-14 bg-gradient-to-br from-emerald-400 to-teal-400 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">📲</div>
+                        <div>
+                            <h4 class="text-2xl font-semibold">Paiement mobile &amp; Mobile Money (Orange Money, MTN MoMo, Wave, Airtel Money...)</h4>
+                            <p class="text-zinc-400 mt-2">Surtout en Afrique (Côte d’Ivoire, Sénégal, etc.). Tu payes avec ton numéro de téléphone et un code USSD ou app.</p>
+                            <div class="mt-4 text-xs bg-emerald-900/50 text-emerald-300 px-4 py-2 rounded-xl inline-flex items-center gap-2">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Très populaire en Côte d’Ivoire
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cryptomonnaies -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 card-hover">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-14 h-14 bg-gradient-to-br from-orange-400 to-amber-400 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">₿</div>
+                        <div>
+                            <h4 class="text-2xl font-semibold">Cryptomonnaies (Bitcoin, USDT, Ethereum...)</h4>
+                            <p class="text-zinc-400 mt-2">Décentralisé. Tu envoies directement depuis ton wallet (MetaMask, Binance, etc.). Pas d’intermédiaire bancaire.</p>
+                            <div class="mt-6 text-[10px] uppercase tracking-widest text-amber-300">Volatilité + frais de réseau</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Virements SEPA / Instantanés -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 card-hover">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-14 h-14 bg-gradient-to-br from-purple-400 to-violet-400 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">🏦</div>
+                        <div>
+                            <h4 class="text-2xl font-semibold">Virements bancaires en ligne (SEPA, Instant Payment)</h4>
+                            <p class="text-zinc-400 mt-2">Via IBAN ou QR code. En Europe : SEPA Instant = argent reçu en moins de 10 secondes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buy Now Pay Later -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 card-hover">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-14 h-14 bg-gradient-to-br from-pink-400 to-rose-400 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">⏳</div>
+                        <div>
+                            <h4 class="text-2xl font-semibold">Buy Now Pay Later (BNPL) : Klarna, Affirm, Alma</h4>
+                            <p class="text-zinc-400 mt-2">Tu payes en 3 ou 4 fois sans frais (souvent). La société de BNPL avance l’argent au marchand.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paiements par lien ou facture -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 card-hover">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-14 h-14 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">🔗</div>
+                        <div>
+                            <h4 class="text-2xl font-semibold">Paiement par lien ou QR Code</h4>
+                            <p class="text-zinc-400 mt-2">Le marchand t’envoie un lien PayPal/Stripe ou un QR. Tu ouvres et tu payes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3 : COMMENT ÇA MARCHE VRAIMENT -->
+        <section id="fonctionnement" class="mb-24 bg-zinc-900 rounded-3xl p-12">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="px-4 py-1 bg-cyan-400 text-black text-xs font-bold rounded-3xl">03</span>
+                <h3 class="section-title text-4xl font-semibold title-font">Le parcours complet d’un paiement (étape par étape)</h3>
+            </div>
+            
+            <div class="space-y-12">
+                <!-- Étape 1 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-56 flex-shrink-0">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-cyan-400 text-black font-bold text-xl">1</div>
+                        <div class="mt-4 text-cyan-400 font-medium">Le client clique sur "Payer"</div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="code-block p-8 rounded-3xl">
+                            <pre class="text-xs text-emerald-300 overflow-auto">Client → Site marchand → Bouton "Payer maintenant"
+→ Redirection vers la page de paiement sécurisée (hosted payment page)</pre>
+                        </div>
+                        <p class="text-zinc-400 text-sm mt-4">Le site n’a jamais accès à ton numéro de carte (grâce au token).</p>
+                    </div>
+                </div>
+
+                <!-- Étape 2 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-56 flex-shrink-0">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-cyan-400 text-black font-bold text-xl">2</div>
+                        <div class="mt-4 text-cyan-400 font-medium">Passerelle de paiement (PSP)</div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="bg-zinc-800 rounded-3xl p-8">
+                            <div class="flex gap-6">
+                                <div class="flex-1">
+                                    <div class="text-xs uppercase tracking-widest text-zinc-500 mb-2">Exemples de PSP</div>
+                                    <div class="flex flex-wrap gap-3">
+                                        <div class="px-5 py-2 bg-black rounded-2xl text-xs">Stripe</div>
+                                        <div class="px-5 py-2 bg-black rounded-2xl text-xs">PayPal</div>
+                                        <div class="px-5 py-2 bg-black rounded-2xl text-xs">Adyen</div>
+                                        <div class="px-5 py-2 bg-black rounded-2xl text-xs">Orange Money API</div>
+                                    </div>
+                                </div>
+                                <div class="w-px bg-zinc-700"></div>
+                                <div class="flex-1 text-xs text-zinc-400">
+                                    La passerelle fait le lien entre le site et les banques. Elle gère la conversion devises, la fraude, etc.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Étape 3 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-56 flex-shrink-0">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-cyan-400 text-black font-bold text-xl">3</div>
+                        <div class="mt-4 text-cyan-400 font-medium">Autorisation bancaire</div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="grid grid-cols-2 gap-4 text-xs">
+                            <div class="bg-black p-6 rounded-3xl">
+                                <div class="text-emerald-400">Émetteur (ta banque)</div>
+                                <div class="mt-8 text-3×1 font-light text-white">Vérifie solde + 3D Secure</div>
+                            </div>
+                            <div class="bg-black p-6 rounded-3xl">
+                                <div class="text-amber-400">Acquéreur (banque du marchand)</div>
+                                <div class="mt-8 text-2xl font-light text-white">Reçoit l’argent</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Étape 4 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-56 flex-shrink-0">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-cyan-400 text-black font-bold text-xl">4</div>
+                        <div class="mt-4 text-cyan-400 font-medium">Règlement (settlement)</div>
+                    </div>
+                    <div class="flex-1 text-zinc-400">
+                        L’argent est transféré du compte du client vers le compte du marchand (moins les frais : 1,5 % à 3 % généralement). 
+                        Cela peut prendre 1 à 3 jours ouvrables.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4 : SÉCURITÉ -->
+        <section id="securite" class="mb-24">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="px-4 py-1 bg-cyan-400 text-black text-xs font-bold rounded-3xl">04</span>
+                <h3 class="section-title text-4xl font-semibold title-font">La sécurité : comment on protège ton argent</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-zinc-900 p-8 rounded-3xl border border-emerald-900">
+                    <i class="fas fa-lock text-5xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-semibold text-xl">HTTPS + SSL/TLS</h4>
+                    <p class="text-sm text-zinc-400 mt-3">Toutes les données sont chiffrées de bout en bout. Impossible à intercepter.</p>
+                </div>
+                
+                <div class="bg-zinc-900 p-8 rounded-3xl border border-emerald-900">
+                    <i class="fas fa-fingerprint text-5xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-semibold text-xl">Authentification forte (3D Secure 2.0)</h4>
+                    <p class="text-sm text-zinc-400 mt-3">SMS, application bancaire, empreinte digitale ou reconnaissance faciale.</p>
+                </div>
+                
+                <div class="bg-zinc-900 p-8 rounded-3xl border border-emerald-900">
+                    <i class="fas fa-shield-halved text-5xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-semibold text-xl">PCI-DSS + Tokenisation</h4>
+                    <p class="text-sm text-zinc-400 mt-3">Norme internationale. Le numéro de carte n’est jamais stocké par le marchand.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center text-xs text-zinc-500 max-w-md mx-auto">
+                En 2026, le taux de fraude sur les paiements en ligne est inférieur à 0,1 % grâce à l’IA qui détecte les comportements suspects en temps réel.
+            </div>
+        </section>
+
+        <!-- SECTION 5 : AVANTAGES &amp; RISQUES -->
+        <section id="avantages" class="grid md:grid-cols-2 gap-16 mb-24">
+            <div>
+                <h3 class="text-3xl font-semibold mb-8 flex items-center gap-3">
+                    <span class="text-emerald-400">✅</span> Avantages
+                </h3>
+                <ul class="space-y-6 text-zinc-300">
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-400/20 flex items-center justify-center text-emerald-400 text-xs">✓</div>
+                        <div>Confort total : payer en 3 secondes depuis son canapé</div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-400/20 flex items-center justify-center text-emerald-400 text-xs">✓</div>
+                        <div>Accessible partout dans le monde (même en Côte d’Ivoire avec Orange Money)</div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-400/20 flex items-center justify-center text-emerald-400 text-xs">✓</div>
+                        <div>Traçabilité : historique instantané dans ton appli bancaire</div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-400/20 flex items-center justify-center text-emerald-400 text-xs">✓</div>
+                        <div>Protection acheteur (remboursement facile sur PayPal, Stripe...)</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-3xl font-semibold mb-8 flex items-center gap-3">
+                    <span class="text-red-400">⚠️</span> Risques &amp; comment les éviter
+                </h3>
+                <ul class="space-y-6 text-zinc-300">
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-red-400/20 flex items-center justify-center text-red-400 text-xs">!</div>
+                        <div>Phishing (faux site) → Toujours vérifier l’URL et le cadenas</div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-red-400/20 flex items-center justify-center text-red-400 text-xs">!</div>
+                        <div>Vol de données → Utiliser uniquement sites HTTPS + 3D Secure</div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-red-400/20 flex items-center justify-center text-red-400 text-xs">!</div>
+                        <div>Frais cachés → Lire les conditions avant de payer</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONCLUSION -->
+        <section id="conclusion" class="bg-gradient-to-br from-cyan-400 to-blue-600 text-black rounded-3xl p-16 text-center">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="title-font text-6xl font-bold tracking-tighter mb-6">Tu as maintenant compris le concept à 100 %</h2>
+                <p class="text-xl mb-10">
+                    Un moyen de paiement en ligne n’est pas juste une carte ou une appli : 
+                    c’est tout un écosystème technologique ultra-sécurisé qui fait circuler l’argent en quelques millisecondes à travers le monde.
+                </p>
+                <div class="inline-flex items-center gap-6 bg-white/20 backdrop-blur-3xl rounded-3xl px-10 py-6">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold">2 500 Md$</div>
+                        <div class="text-xs opacity-75">transactions en ligne en 2026</div>
+                    </div>
+                    <div class="h-12 w-px bg-black/30"></div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold">+ de 300</div>
+                        <div class="text-xs opacity-75">méthodes différentes dans le monde</div>
+                    </div>
+                </div>
+                
+                <div class="mt-16 text-sm opacity-75">
+                    Maintenant que tu maîtrises le concept, tu peux payer en toute confiance… ou même créer ton propre système de paiement !
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <!-- FOOTER -->
+   
+
+    <script>
+        // Tailwind script already loaded via CDN
+        // Petit effet smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
